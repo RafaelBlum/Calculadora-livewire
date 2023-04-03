@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="#"  target="_blank" title="Visit cardápio digital home page">
-		<img src="calculator-img.jpg" alt="Cardápio Digital" width="100">
+		<img src="calculator-img.jpg" alt="Cardápio Digital">
 	</a>
 </p>
 
