@@ -18,14 +18,17 @@
 
 ## Projeto calculadora
 
-Este é uma `aplicação Laravel` utilizando a "extensão" `Livewire`. Uma extensão reativa que venho para agilizar o desenvolvimento
+Este é uma `aplicação Laravel` utilizando a "extensão" `Livewire`. Uma extensão reativa, que agiliza o desenvolvimento
 com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas não precisamos se preocupar com  desenvolvimento).
 
 > Com livewire temos componentes responsivos e juntamente com o blade, temos uma ferramenta poderosa. Componentes que podemos atualizar sem
 >precisar atualizar toda página de forma fácil e rápida.
 
 ##### Comandos e desenvolvimento
-- [--] ....
+- [--] composer create-project laravel/laravel name-project
+- [--] composer require livewire/livewire
+- [--] 
+- [--] 
 
 
 ######  Tecnologias (serviços externos, libs, frameworks, hospedagem etc.)

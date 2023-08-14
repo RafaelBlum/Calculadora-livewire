@@ -1,12 +1,23 @@
-<div class="flex space-x-3">
-    <div class="shadow flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+<div class="flex justify-center"  style="justify-content: center; align-items: center;">
+
+    <div class="shadow items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0" style="border-radius: 10px;padding: 70px; display: block;justify-content: center; width: 600px;">
+        <h1 class="text-center text-md dark:text-white">{{ $title }} livewire intro</h1>
+        <div class="justify-center text-center text-sm dark:text-white sm:text-left sm:ml-0 mardiv">
+            <?php if($error): ?>
+                <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
+            <?php endif; ?>
+            <br>
+
+            <div class="justify-center container calc">
+                <input type="text" class="values" wire:model="tot" disabled="">
+{{--                <p>User: {{ $user->name }}</p>--}}
+            </div>
+        </div>
+
         <div class="max-w-6xl mx-auto sm:px-12 lg:px-12 mardiv">
             <div class="flex justify-center mt-4 sm:items-center">
                 <div class="ml-4 text-center text-sm dark:text-white sm:text-right sm:ml-0">
-                    <h1>{{ $title }} livewire intro</h1>
                     <div class="container calc">
-                        <div class="header">Calculator</div>
-
                         <input type="text" class="values" value="{{$math}}" placeholder="0">
 
                         <div class="first-row">
@@ -41,7 +52,7 @@
                                 <input type="button" name="" wire:click="addMath('+')" value="+" class="global grey plus">
                             </div>
                             <div class="right">
-                                <input type="button" name="" wire:click="result" value="=" class="global green white-text big top-margin result">
+                                <input type="button" name="" wire:click="result" value="=" class="global green white-text big top-margin result" >
                             </div>
                         </div>
 
@@ -49,18 +60,6 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container ml-4 text-center text-sm dark:text-white sm:text-left sm:ml-0 mardiv">
-        <?php if($error): ?>
-        <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
-        <?php endif; ?>
-        <br>
-        <hr>
-        <div class="container calc">
-            <input type="text" class="values" wire:model="tot" disabled="">
-            <p>User: {{ $user->name }}</p>
         </div>
     </div>
 </div>
