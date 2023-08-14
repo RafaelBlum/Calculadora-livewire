@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="#"  target="_blank" title="calculadora com livewire">
-		<img src="calculator-img.jpg" alt="calculadora com livewire" style="border-radius: 5px;" width="200">
+		<img src="calculator-img.jpg" alt="calculadora com livewire" style="border-radius: 5px;" width="400">
 	</a>
 </p>
 
@@ -54,7 +54,7 @@ Componente de descrição em um input com reatividade. A variável `pública` no
 
 <p align="center">
 	<a href="#"  target="_blank" title="exemple">
-		<img src="git-component.gif" alt="calculadora com livewire" style="border-radius: 5px;" width="200">
+		<img src="git-component.gif" alt="calculadora com livewire" style="border-radius: 5px;" width="150">
 	</a>
 </p>
 
