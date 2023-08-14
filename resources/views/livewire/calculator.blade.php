@@ -7,7 +7,8 @@
                 <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
             <?php endif; ?>
             <br>
-
+            {{$component}} | {{$description}} <br>
+            <input type="text" class="values" wire:model="description">
             <div class="justify-center container calc">
                 <input type="text" class="values" wire:model="tot" disabled="">
 {{--                <p>User: {{ $user->name }}</p>--}}

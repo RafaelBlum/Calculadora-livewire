@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="#"  target="_blank" title="calculadora com livewire">
-		<img src="calculator-img.jpg" alt="calculadora com livewire" style="border-radius: 5px;">
+		<img src="calculator-img.jpg" alt="calculadora com livewire" style="border-radius: 5px;" width="200">
 	</a>
 </p>
 
@@ -36,31 +36,27 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
 - ` ` [--] 
 - ` ` [--] 
 
-~~~javascript
-Esta é uma linha de código em Javascript.
-~~~
 
-~~~php
-Esta é uma linha de código em PHP.
-~~~
-
-~~~html
-Esta é uma linha de código em HTML.
-~~~
-
-
-Exemplo   | Valor do exemplo
---------- | ------
-Exemplo 1 | R$ 10
-Exemplo 2 | R$ 8
-Exemplo 3 | R$ 7
-Exemplo 4 | R$ 8
 
 ######  Tecnologias (serviços externos, libs, frameworks, hospedagem etc.)
 
 - <a href="#" target="_blank">Php `8.2`</a>
 - <a href="#" target="_blank">Laravel `9.52.5`</a>
 - <a href="#" target="_blank">Livewire `2.12`</a>
+
+
+## Exemplos
+Componente de descrição em um input com reatividade. A variável `pública` no controller do componente.
+~~~~~~exemplo
+{{$description}}
+<input type="text" class="values" wire:model="description">
+~~~~~~
+
+<p align="center">
+	<a href="#"  target="_blank" title="exemple">
+		<img src="git-component.gif" alt="calculadora com livewire" style="border-radius: 5px;" width="200">
+	</a>
+</p>
 
 ## Contatos
 
