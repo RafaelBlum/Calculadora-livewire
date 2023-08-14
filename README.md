@@ -1,16 +1,18 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-	<a href="#"  target="_blank" title="Visit cardápio digital home page">
-		<img src="calculator-img.jpg" alt="Cardápio Digital">
+	<a href="#"  target="_blank" title="calculadora com livewire">
+		<img src="calculator-img.jpg" alt="calculadora com livewire">
 	</a>
 </p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+	<img src="https://img.shields.io/badge/version project-1.0-brightgreen" alt="version project">
+    <img src="https://img.shields.io/badge/Php-8.2-informational" alt="stack project">
+    <img src="https://img.shields.io/static/v1?label=Livewire&message=2.0&color=brightgreen?style=for-the-badge" alt="stack project">
+	<a href="https://opensource.org/licenses/GPL-3.0">
+		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GPLv3 License">
+	</a>
 </p>
 
 ## Projeto calculadora
