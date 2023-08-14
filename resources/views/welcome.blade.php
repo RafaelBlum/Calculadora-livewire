@@ -51,11 +51,16 @@
                 background: rgba(34, 39, 255, 0.3);
             }
         </style>
+
+        <!--================== livewire style css ==================-->
         <livewire:styles />
     </head>
     <body class="dark:bg-gray-800">
+        <!--================== invocando componente pelo prefixo livewire: ==================-->
         <livewire:calculator />
 
+
+        <!--================== livewire javascript css ==================-->
         <livewire:scripts />
     </body>
 

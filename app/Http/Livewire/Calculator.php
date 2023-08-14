@@ -11,12 +11,14 @@ class Calculator extends Component
     public $math = '';
     public $tot = 0;
     public $error = '';
+    public $description = "Livewire";
 
     public function render()
     {
         return view('livewire.calculator', [
             "title" => "Calculadora",
-            "user"=> User::factory()->create()
+            "user"=> User::factory()->create(),
+            "component" => "Componente"
         ]);
     }
 

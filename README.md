@@ -10,32 +10,57 @@
 	<img src="https://img.shields.io/badge/version project-1.0-brightgreen" alt="version project">
     <img src="https://img.shields.io/badge/Php-8.2-informational&color=brightgreen" alt="stack project">
     <img src="https://img.shields.io/static/v1?label=Laravel&message=9.52.5&color=brightgreen?style=for-the-badge" alt="stack project">
-    <img src="https://img.shields.io/static/v1?label=Livewire&message=2.x&color=brightgreen?style=for-the-badge" alt="stack project">
+    <img src="https://img.shields.io/static/v1?label=Livewire&message=2.12&color=brightgreen?style=for-the-badge" alt="stack project">
 	<a href="https://opensource.org/licenses/GPL-3.0">
 		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GPLv3 License">
 	</a>
 </p>
 
-## Projeto calculadora
+## _Projeto calculadora_
 
 Este é uma `aplicação Laravel` utilizando a "extensão" `Livewire`. Uma extensão reativa, que agiliza o desenvolvimento
 com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas não precisamos se preocupar com  desenvolvimento).
 
-> Com livewire temos componentes responsivos e juntamente com o blade, temos uma ferramenta poderosa. Componentes que podemos atualizar sem
+> Com **livewire** temos componentes responsivos e juntamente com o blade, temos uma ferramenta poderosa. Componentes que podemos atualizar sem
 >precisar atualizar toda página de forma fácil e rápida.
 
-##### Comandos e desenvolvimento
+##### Instalações
 - [--] composer create-project laravel/laravel name-project
 - [--] composer require livewire/livewire
-- [--] 
-- [--] 
 
+##### Comandos
+- `php artisan serve --port=8000` [inicializando servidor] 
+- `php artisan livewire:make Calculator ` [Criando componente calculadora] 
+- ` ` [--] 
+- ` ` [--] 
+- ` ` [--] 
+- ` ` [--] 
+
+~~~javascript
+Esta é uma linha de código em Javascript.
+~~~
+
+~~~php
+Esta é uma linha de código em PHP.
+~~~
+
+~~~html
+Esta é uma linha de código em HTML.
+~~~
+
+
+Exemplo   | Valor do exemplo
+--------- | ------
+Exemplo 1 | R$ 10
+Exemplo 2 | R$ 8
+Exemplo 3 | R$ 7
+Exemplo 4 | R$ 8
 
 ######  Tecnologias (serviços externos, libs, frameworks, hospedagem etc.)
 
 - <a href="#" target="_blank">Php `8.2`</a>
 - <a href="#" target="_blank">Laravel `9.52.5`</a>
-- <a href="#" target="_blank">Livewire `2.x`</a>
+- <a href="#" target="_blank">Livewire `2.12`</a>
 
 ## Contatos
 
