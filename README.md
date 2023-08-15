@@ -79,7 +79,7 @@ Componente de botão com reatividade de somar e diminuir. wire:click acessa o me
 
 <p align="center">
 	<a href="#" title="input-com-reatividade">
-		<img src="git-component-button.gif" alt="calculadora com livewire" width="150">
+		<img src="git-component-button.gif" alt="calculadora com livewire" width="350">
 	</a>
 </p>
 
