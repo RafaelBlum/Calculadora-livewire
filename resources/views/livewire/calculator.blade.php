@@ -2,23 +2,22 @@
 
     <div class="shadow items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0" style="border-radius: 10px;padding: 70px; display: block;justify-content: center; width: 600px;">
         <h1 class="text-center text-md dark:text-white">{{ $title }} livewire intro</h1>
-        <div class="justify-center text-center text-sm dark:text-white sm:text-left sm:ml-0 mardiv">
-            <?php if($error): ?>
-                <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
-            <?php endif; ?>
-            <br>
-            {{$number}} <br>
-                <button type="button" class="values" wire:click="addPlus">Somar</button>
-                <button type="button" class="values" wire:click="addMinus">Subtrair</button>
-            <div class="justify-center container calc">
-                <input type="text" class="values" wire:model="tot" disabled="">
-{{--                <p>User: {{ $user->name }}</p>--}}
-            </div>
-        </div>
+
 
         <div class="max-w-6xl mx-auto sm:px-12 lg:px-12 mardiv">
             <div class="flex justify-center mt-4 sm:items-center">
                 <div class="ml-4 text-center text-sm dark:text-white sm:text-right sm:ml-0">
+                    <div class="justify-center text-center text-sm dark:text-white sm:text-left sm:ml-0 mardiv">
+                        <?php if($error): ?>
+                        <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
+                        <?php endif; ?>
+                        <br>
+
+                        <div class="justify-center container calc">
+                            <input type="text" class="values" wire:model="tot" disabled="">
+                        </div>
+                    </div>
+
                     <div class="container calc">
                         <input type="text" class="values" value="{{$math}}" placeholder="0">
 
