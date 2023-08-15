@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="#"  target="_blank" title="calculadora com livewire">
-		<img src="git-calculator.gif" alt="calculadora com livewire" style="border-radius: 5px;" width="400">
+		<img src="gifs/git-calculator.gif" alt="calculadora com livewire" style="border-radius: 5px;" width="400">
 	</a>
 </p>
 
@@ -31,11 +31,6 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
 ##### Comandos
 - `php artisan serve --port=8000` [inicializando servidor] 
 - `php artisan livewire:make Calculator ` [Criando componente calculadora] 
-- ` ` [--] 
-- ` ` [--] 
-- ` ` [--] 
-- ` ` [--] 
-
 
 
 ######  Tecnologias (serviços externos, libs, frameworks, hospedagem etc.)
@@ -44,8 +39,76 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
 - <a href="#" target="_blank">Laravel `9.52.5`</a>
 - <a href="#" target="_blank">Livewire `2.12`</a>
 
+## Desenvolvimento (lógica)
 
-## Exemplos
+`View blade *calculator*`
+~~~~~~view
+<input type="text" class="values" wire:model="tot" disabled="">
+<input type="text" class="values" value="{{$math}}" placeholder="0">
+~~~~~~
+
+~~~~~~
+<div class="first-row">
+    <input type="button" name="" wire:click="addMath('^')" value="&radic;" class="global">
+    <input type="button" name="" wire:click="addMath('(')" value="(" class="global">
+    <input type="button" name="" wire:click="addMath(')')" value=")" class="global">
+    <input type="button" name="" wire:click="addMath('%')" value="%" class="global">
+</div>
+<div class="second-row">
+    <input type="button" name="" wire:click="addMath(7)" value="7" class="global">
+    <input type="button" name="" wire:click="addMath(8)" value="8" class="global">
+    <input type="button" name="" wire:click="addMath(9)" value="9" class="global">
+    <input type="button"         wire:click="addMath('/')" name="" value="/" class="global">
+</div>
+<div class="third-row">
+    <input type="button" name="" wire:click="addMath(4)" value="4" class="global">
+    <input type="button" name="" wire:click="addMath(5)" value="5" class="global">
+    <input type="button" name="" wire:click="addMath(6)" value="6" class="global">
+    <input type="button" name="" wire:click="addMath('*')" value="X" class="global">
+</div>
+<div class="fourth-row">
+    <input type="button" name="" wire:click="addMath(1)" value="1" class="global">
+    <input type="button" name="" wire:click="addMath(2)" value="2" class="global">
+    <input type="button" name="" wire:click="addMath(3)" value="3" class="global">
+    <input type="button" name="" wire:click="addMath('-')" value="-" class="global">
+</div>
+<div class="conflict">
+    <div class="left">
+        <input type="button" name="" wire:click="addMath(0)" value="0" class="big global">
+        <input type="button" name="" wire:click="addMath('.')" value="." class="small global">
+        <input type="button" name="" wire:click="clear" value="Del" class="global red small white-text top-margin">
+        <input type="button" name="" wire:click="addMath('+')" value="+" class="global grey plus">
+    </div>
+    <div class="right">
+        <input type="button" name="" wire:click="result" value="=" class="global green white-text big top-margin result" >
+    </div>
+</div>
+~~~~~~
+
+`Controller *Calculator*`
+~~~~~~Calculator
+    public $math = '';
+    public $tot = 0;
+
+    public function addMath($num)
+    {
+        $this->math .= $num;
+    }
+
+    public function result()
+    {
+        $this->tot = eval('return ' . $this->math . ';');
+    }
+
+    public function clear()
+    {
+        $this->math = '';
+        $this->tot = 0;
+    }
+~~~~~~
+
+
+##### Exemplos 1
 Componente de descrição em um input com reatividade. A variável `pública` no controller do componente.
 ~~~~~~exemplo
 {{$description}}
@@ -54,10 +117,11 @@ Componente de descrição em um input com reatividade. A variável `pública` no
 
 <p align="center">
 	<a href="#" title="input-com-reatividade">
-		<img src="git-component.gif" alt="calculadora com livewire" width="150">
+		<img src="gifs/git-component.gif" alt="calculadora com livewire" width="150">
 	</a>
 </p>
 
+##### Exemplos 2
 Componente de botão com reatividade de somar e diminuir. wire:click acessa o metodo no controller do componente.
 ~~~~~~button
 {{$number}} <br>
@@ -79,7 +143,7 @@ Componente de botão com reatividade de somar e diminuir. wire:click acessa o me
 
 <p align="center">
 	<a href="#" title="input-com-reatividade">
-		<img src="git-component-button.gif" alt="calculadora com livewire" width="350">
+		<img src="gifs/git-component-button.gif" alt="calculadora com livewire" width="350">
 	</a>
 </p>
 

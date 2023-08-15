@@ -9,7 +9,7 @@
                 <div class="ml-4 text-center text-sm dark:text-white sm:text-right sm:ml-0">
                     <div class="justify-center text-center text-sm dark:text-white sm:text-left sm:ml-0 mardiv">
                         <?php if($error): ?>
-                        <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
+                            <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
                         <?php endif; ?>
                         <br>
 
