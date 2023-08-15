@@ -53,8 +53,33 @@ Componente de descrição em um input com reatividade. A variável `pública` no
 ~~~~~~
 
 <p align="center">
-	<a href="#"  target="_blank" title="exemple">
-		<img src="git-component.gif" alt="calculadora com livewire" style="border-radius: 5px; margin: 3px; border: red 2px solid;" width="150">
+	<a href="#" title="input-com-reatividade">
+		<img src="git-component.gif" alt="calculadora com livewire" width="150">
+	</a>
+</p>
+
+Componente de botão com reatividade de somar e diminuir. wire:click acessa o metodo no controller do componente.
+~~~~~~button
+{{$number}} <br>
+<button type="button" class="values" wire:click="addPlus">Somar</button>
+<button type="button" class="values" wire:click="addMinus">Subtrair</button>
+~~~~~~
+
+~~~~~~metodos
+    public function addPlus()
+    {
+        $this->number++;
+    }
+    
+    public function addMinus()
+    {
+        $this->number--;
+    }
+~~~~~~
+
+<p align="center">
+	<a href="#" title="input-com-reatividade">
+		<img src="git-component-button.gif" alt="calculadora com livewire" width="150">
 	</a>
 </p>
 

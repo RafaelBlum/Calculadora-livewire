@@ -7,8 +7,9 @@
                 <p style="color: red; font-weight: 700;">Erro [ {{ $error }} ]</p>
             <?php endif; ?>
             <br>
-            {{$component}} | {{$description}} <br>
-            <input type="text" class="values" wire:model="description">
+            {{$number}} <br>
+                <button type="button" class="values" wire:click="addPlus">Somar</button>
+                <button type="button" class="values" wire:click="addMinus">Subtrair</button>
             <div class="justify-center container calc">
                 <input type="text" class="values" wire:model="tot" disabled="">
 {{--                <p>User: {{ $user->name }}</p>--}}

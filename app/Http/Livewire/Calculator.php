@@ -12,6 +12,7 @@ class Calculator extends Component
     public $tot = 0;
     public $error = '';
     public $description = "Livewire";
+    public $number = 10;
 
     public function render()
     {
@@ -36,6 +37,16 @@ class Calculator extends Component
     {
         $this->math = '';
         $this->tot = 0;
+    }
+
+    public function addPlus()
+    {
+        $this->number++;
+    }
+
+    public function addMinus()
+    {
+        $this->number--;
     }
 }
 
