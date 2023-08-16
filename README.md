@@ -47,8 +47,6 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
 <input type="text" class="values" value="{{$math}}" placeholder="0">
 ~~~~~~
 
-Com a diretiva `wire:model` selecionamos a propriedade pública do componente
-
 | Diretiva | Explicação |
 | :---         |     :---      |
 | `wire:model` | *Recebe uma propriedade "tot" pública da classe do componente, e toda vez que um elemento de entrada com esta diretiva é atualizado, a propriedade sincroniza com seu valor* |
