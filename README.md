@@ -47,6 +47,14 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
 <input type="text" class="values" value="{{$math}}" placeholder="0">
 ~~~~~~
 
+Com a diretiva `wire:model` selecionamos a propriedade pública do componente
+
+| Diretiva | Explicação |
+| :---         |     :---      |
+| `wire:model` | *Recebe uma propriedade "tot" pública da classe do componente, e toda vez que um elemento de entrada com esta diretiva é atualizado, a propriedade sincroniza com seu valor* |
+| `wire:click` | *Escuta um evento "click" e aciona o método "math" no componente.* |
+
+
 ~~~~~~
 <div class="first-row">
     <input type="button" name="" wire:click="addMath('^')" value="&radic;" class="global">
@@ -90,6 +98,13 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
     public $math = '';
     public $tot = 0;
 
+    public function render()
+    {
+        return view('livewire.calculator', [
+            "title" => "Calculadora"
+        ]);
+    }
+
     public function addMath($num)
     {
         $this->math .= $num;
@@ -107,6 +122,10 @@ com `componentes reativo` "sem" o uso de javascript (Existe o javascript, mas n�
     }
 ~~~~~~
 
+| Classe | Explicação |
+| :---         |     :---      |
+| `public $math` | *As propriedades nos componentes sempre precisamos declarar como públicas* |
+| `function render` | *Metodo **render** é como se fosse um metodo construtor de uma classe Php e renderiza a view blade e podemos passar variáveis. * |
 
 ##### Exemplos 1
 Componente de descrição em um input com reatividade. A variável `pública` no controller do componente.
